@@ -1,0 +1,23 @@
+Package: esa.io
+Title: `esa` API `v1` Wrapper Package
+Version: 0.0.0.9000
+Date: 2016-01-19
+Authors@R: c(person(given = "Shinya", family = "Uryu",
+                                            email = "suika1127@gmail.com",
+                                            role  = c("aut", "cre")))
+Description: What the package does (one paragraph).
+Depends:
+    R (>= 3.2.3)
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/uribo/esa.io
+BugReports: https://github.com/uribo/esa.io/issues
+Imports:
+    httr,
+    magrittr,
+    rmarkdown
+Remotes:
+    richfitz/remoji
+RoxygenNote: 5.0.1
+Encoding: UTF-8
+Suggests: testthat

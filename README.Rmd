@@ -1,0 +1,17 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+[![Travis-CI Build Status](https://travis-ci.org/uribo/esa.io.svg?branch=master)](https://travis-ci.org/uribo/esa.io)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/esa.io)](http://cran.r-project.org/package=esa.io)

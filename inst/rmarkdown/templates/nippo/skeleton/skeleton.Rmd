@@ -1,0 +1,50 @@
+---
+title: "title"
+author: "`r options('devtools.name')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  md_document:
+    variant: markdown_github
+---
+
+```{r [SETTING], include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, 
+                      message = FALSE, error = FALSE, warning = FALSE,
+                      fig.align = "center")
+```
+
+```{r, eval = FALSE, include = FALSE}
+library(remoji)
+```
+
+
+# `r emoji("honeybee")` 本日の作業内容 `r emoji("muscle")`
+
+## `r emoji("clock9")` 午前 `r emoji("sunrise")`
+
+- [ ] Task
+- [x] Task
+
+## `r emoji("clock3")` 午後 `r emoji("night_with_stars")`
+
+# `r emoji("cactus")` 知見 `r emoji("moneybag")`
+
+# `r emoji("bulb")` 発想 `r emoji("dizzy")`
+
+# `r emoji("warning")` 発生した問題 `r emoji("construction")`
+
+# `r emoji("sleepy")` 明日の作業予定 `r emoji("zzz")`
+
+# `r emoji("tea")` 所感 `r emoji("hear_no_evil")`
+
+> `r emoji("beginner")` **項目のない見出しは削除すること**
+
+-----
+
+```{r, eval = TRUE,results = 'asis'}
+devtools::session_info() %$% packages %>% 
+  dplyr::filter(`*`  == "*") %>% 
+  dplyr::select(package, version, source) %>% 
+  knitr::kable(format = "markdown")
+```
+
